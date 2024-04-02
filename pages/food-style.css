@@ -1,15 +1,20 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body{
-    background-color: rgb(238, 96, 0);
+    align-items: center;
+    background-color:rgb(238, 96, 0);
+    color:hsl(30, 10%, 34%);
+    display: block;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Nav bar styling */
 .nav-section{
+    align-items: center;
     background-color: rgb(218, 207, 191);
     color: rgb(238, 96, 0);
     display: flex;
@@ -18,6 +23,8 @@ body{
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     overflow: hidden;
+    height: 3rem;
+    margin-bottom: 2rem;
 }
 .nav-div ul{
     list-style: none;
@@ -32,6 +39,9 @@ body{
     color: rgb(238, 96, 0);
     text-decoration: none;
 
+}
+.logo-div{
+    align-items: center;
 }
 .logo-div a{
     color: rgb(238, 96, 0);
@@ -119,122 +129,71 @@ body{
     color: rgb(238, 96, 0);
 }
 
-/* Body styling */
 
-.body-section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-    height: 90vh;
-}
-
-/* Sidebar styling */
-.sidebar{
-    background-color: rgb(186, 173, 156);
-    border-radius: 1rem;
-    color: rgb(255, 255, 255);
-    height: fit-content;
-    padding: 2rem;
-    width: 20%;
-}
-.sidebar ul{
-    list-style:square;
-    padding: 2rem;
-    line-height: 3;
-}
-.sidebar a{
-    color: white;
-    text-decoration: none;
-    text-shadow: black 1px 0 1px;
-}
-.sidebar a:hover{
-    color: blue;
-    
+/* Text Styles */
+h2 {
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1.3rem;
 }
 
-/* Main body style */
-.main-body{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-/* Card styling */
-.cards{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 200vh;
-    justify-content: center;
-    padding: 2rem;
-    width: 80%;
-}
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
-    border-radius: 1rem;
-    display: flex;
-    justify-content: space-around;
-    height: 50%;
-    padding: 0.5rem;
-    width: 90%;
+h1 {
+    color:hsl(24, 5%, 18%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 1.3rem;
 }
 
-/* Inner card styling */
-.card1-img img,
-.card2-img img,
-.card3-img img,
-.card4-img img,
-.card5-img img,
-.card6-img img
-{
+p{
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+/* Content Styles */
+.main-cont-div {
+    background-color: rgb(218, 207, 191);
     border-radius: 2rem;
-    height: 30vh;
-    width: 100%;
-}
-.card1-text,
-.card2-text,
-.card3-text,
-.card4-text,
-.card5-text,
-.card6-text{
-    padding: 1rem;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 2rem;
     width: 50%;
 }
-.card1-img,
-.card2-img  ,
-.card3-img  ,
-.card4-img  ,
-.card5-img  ,
-.card6-img  {
-    width: 90%;
+
+.img-cont {
+    background-image: url('https://i.ibb.co/s5CkKqc/image-omelette.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    width: 100%;
 }
-.main-body button{
-    border: none;
-    border-radius: 0.5rem;
-    background-color: white;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-.main-body button a{
-    color: rgb(238, 96, 0);
-    text-transform: capitalize;
-    text-decoration: none;
-}
-.main-body button a:hover{
-    text-decoration: underline;
-}
-.card1-3{
-    background-color: rgb(255, 255, 255, 0.2);
+
+/* prep time style */
+.prep-time {
+    background-color:hsl(330, 100%, 98%);
     border-radius: 1rem;
-    display: flex;
-    margin-bottom: 1rem;
+    padding: 1rem;
 }
-.card4-6{
-    background-color: rgb(255, 255, 255, 0.2);
-    border-radius: 1rem;
-    display: flex;
+
+.prep-time h4 {
+    color: hsl(332, 51%, 32%);
+}
+    
+.prep-time-list li {
+    margin-bottom: 7px;
+}
+
+/* List Styling */
+ol, ul {
+    line-height: 1.8;
+}
+ol li::marker {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+}
+
+tr{
+    line-height: 1.7;
 }

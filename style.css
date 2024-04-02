@@ -161,7 +161,7 @@ body{
     width: 80%;
 }
 .trans-image{
-    background-color: white;
+    /* background-color: white; */
     border-radius: 1rem;
     height: 80%;
     padding: 0.5rem;

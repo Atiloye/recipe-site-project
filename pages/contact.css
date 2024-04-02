@@ -124,117 +124,36 @@ body{
 .body-section{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem;
     height: 90vh;
 }
 
-/* Sidebar styling */
-.sidebar{
-    background-color: rgb(186, 173, 156);
-    border-radius: 1rem;
-    color: rgb(255, 255, 255);
-    height: fit-content;
-    padding: 2rem;
-    width: 20%;
-}
-.sidebar ul{
-    list-style:square;
-    padding: 2rem;
-    line-height: 3;
-}
-.sidebar a{
-    color: white;
-    text-decoration: none;
-    text-shadow: black 1px 0 1px;
-}
-.sidebar a:hover{
-    color: blue;
-    
-}
-
-/* Main body style */
+/* Main body styling */
 .main-body{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-}
-/* Card styling */
-.cards{
     align-items: center;
+    background-color: rgb(155, 140, 122);
+    border-radius: 2rem;
     display: flex;
-    flex-direction: column;
-    height: 200vh;
+    flex-direction: row;
     justify-content: center;
     padding: 2rem;
-    width: 80%;
-}
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6 {
-    border-radius: 1rem;
-    display: flex;
-    justify-content: space-around;
-    height: 50%;
-    padding: 0.5rem;
     width: 90%;
 }
-
-/* Inner card styling */
-.card1-img img,
-.card2-img img,
-.card3-img img,
-.card4-img img,
-.card5-img img,
-.card6-img img
-{
-    border-radius: 2rem;
-    height: 30vh;
-    width: 100%;
-}
-.card1-text,
-.card2-text,
-.card3-text,
-.card4-text,
-.card5-text,
-.card6-text{
+.fb-icon, 
+.twitter-icon,
+.insta-icon{
+    background: rgb(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
     padding: 1rem;
-    width: 50%;
 }
-.card1-img,
-.card2-img  ,
-.card3-img  ,
-.card4-img  ,
-.card5-img  ,
-.card6-img  {
-    width: 90%;
-}
-.main-body button{
-    border: none;
-    border-radius: 0.5rem;
-    background-color: white;
-    margin-top: 2rem;
-    padding: 0.5rem;
-}
-.main-body button a{
-    color: rgb(238, 96, 0);
-    text-transform: capitalize;
-    text-decoration: none;
-}
-.main-body button a:hover{
-    text-decoration: underline;
-}
-.card1-3{
-    background-color: rgb(255, 255, 255, 0.2);
-    border-radius: 1rem;
-    display: flex;
-    margin-bottom: 1rem;
-}
-.card4-6{
-    background-color: rgb(255, 255, 255, 0.2);
-    border-radius: 1rem;
-    display: flex;
+.fb-icon:hover, 
+.twitter-icon:hover,
+.insta-icon:hover{
+    background-color: rgb(238, 96, 0);
+    cursor: pointer;
 }
