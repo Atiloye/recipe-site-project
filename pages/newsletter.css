@@ -282,6 +282,17 @@ body{
         padding: 0;
         width: 100%;
     }
+    .nav-section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .search-div{
+        margin-top: 1rem;
+    }
+    .nav-div{
+        margin: 1rem 0;
+    }
     .left-side{
         height: 100%;
         margin-top: 2rem;
