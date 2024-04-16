@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(238, 96, 0);
+    font-family: "Josefin Sans", sans-serif;
 }
 
 /* Nav bar styling */
@@ -201,6 +202,7 @@ body{
 .card4-text,
 .card5-text,
 .card6-text{
+    color: white;
     padding: 1rem;
     width: 50%;
 }
@@ -238,3 +240,43 @@ body{
     border-radius: 1rem;
     display: flex;
 }
+
+.sub-nav-div a{
+    color: white;    
+    text-decoration: none;
+
+}
+.sub-nav-div a:hover{
+    background-color: white;
+    color: rgb(238, 96, 0);
+}
+
+
+  /* Responsive design */
+  @media screen and (max-width: 375px) {
+    .nav-section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .search-div{
+        margin-top: 1rem;
+    }
+    .nav-div{
+        margin: 1rem 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-body{
+        width: 100%;
+    }
+    .sub-nav-section{
+        display: grid;
+    }
+    .card1-3,
+    .card4-6{
+        display: flex;
+        flex-direction: column;
+    }
+  }

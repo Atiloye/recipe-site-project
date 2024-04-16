@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(238, 96, 0);
+    font-family: "Josefin Sans", sans-serif;
 }
 
 /* Nav bar styling */
@@ -157,3 +158,38 @@ body{
     background-color: rgb(238, 96, 0);
     cursor: pointer;
 }
+
+.sub-nav-div a{
+    color: white;    
+    text-decoration: none;
+
+}
+.sub-nav-div a:hover{
+    background-color: white;
+    color: rgb(238, 96, 0);
+}
+  /* Responsive design */
+  @media screen and (max-width: 375px) {
+    .nav-section{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .search-div{
+        margin-top: 1rem;
+    }
+    .nav-div{
+        margin: 1rem 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .body-section{
+        height: fit-content;
+    }
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+  }

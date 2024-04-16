@@ -1,20 +1,16 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    align-items: center;
-    background-color:rgb(238, 96, 0);
-    color:hsl(30, 10%, 34%);
-    display: block;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    height: 100vh;
-    justify-content: center;
-    width: 100%;
+    background-color: rgb(238, 96, 0);
+    font-family: "Josefin Sans", sans-serif;
 }
 
 /* Nav bar styling */
 .nav-section{
-    align-items: center;
     background-color: rgb(218, 207, 191);
     color: rgb(238, 96, 0);
     display: flex;
@@ -23,8 +19,6 @@ body{
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     overflow: hidden;
-    height: 3rem;
-    margin-bottom: 2rem;
 }
 .nav-div ul{
     list-style: none;
@@ -39,9 +33,6 @@ body{
     color: rgb(238, 96, 0);
     text-decoration: none;
 
-}
-.logo-div{
-    align-items: center;
 }
 .logo-div a{
     color: rgb(238, 96, 0);
@@ -129,88 +120,41 @@ body{
     color: rgb(238, 96, 0);
 }
 
+/* Body styling */
 
-/* Text Styles */
-h2 {
-    color: hsl(14, 45%, 36%);
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-top: 1.3rem;
+.body-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem;
+    height: 90vh;
 }
 
-h1 {
-    color:hsl(24, 5%, 18%);
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-top: 1.3rem;
-}
-
-p{
-    font-size: 16px;
-    margin-bottom: 7px;
-}
-
-/* Content Styles */
-.main-cont-div {
-    background-color: rgb(218, 207, 191);
+/* Main body styling */
+.main-body{
+    align-items: center;
+    background-color: rgb(155, 140, 122);
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    padding: 2rem 2rem;
-    width: 50%;
+    padding: 2rem;
+    width: 90%;
 }
-
-.img-cont {
-    background-image: url('https://i.ibb.co/s5CkKqc/image-omelette.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 20rem;
-    width: 100%;
+.to-contact{
+    background-color: #fff;
+    border: none;
+    border-radius: 2rem;
+    width:20rem;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem;
 }
-
-/* prep time style */
-.prep-time {
-    background-color:hsl(330, 100%, 98%);
-    border-radius: 1rem;
-    padding: 1rem;
-}
-
-.prep-time h4 {
-    color: hsl(332, 51%, 32%);
-}
-    
-.prep-time-list li {
-    margin-bottom: 7px;
-}
-.img-cont img{
-    width: 100%;
-}
-.inst-comp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-/* List Styling */
-ol, ul {
-    line-height: 1.8;
-}
-ol li::marker {
-    color: hsl(332, 51%, 32%);
-    font-weight: bold;
-}
-.backbutton{
-    background-color: rgb(238, 96, 0);
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-}
-.backbutton a{
-    color: white;
+.to-contact a{
+    color: rgb(238, 96, 0);
     text-decoration: none;
+    font-size: 20px;
 }
+
 
 .sub-nav-div a{
     color: white;    
@@ -224,11 +168,9 @@ ol li::marker {
   /* Responsive design */
   @media screen and (max-width: 375px) {
     .nav-section{
+        align-items: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 10rem;
-        padding: 1rem;
     }
     .search-div{
         margin-top: 1rem;
@@ -236,7 +178,15 @@ ol li::marker {
     .nav-div{
         margin: 1rem 0;
     }
-    .main-cont-div{
-        width: 75%;
+    .sidebar{
+        display: none;
+    }
+    .body-section{
+        height: fit-content;
+    }
+    .main-body{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
   }

@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(238, 96, 0);
+    font-family: "Josefin Sans", sans-serif;
 }
 
 /* Nav bar styling */
@@ -84,8 +85,10 @@ body{
 .sub-nav-section{
     align-content: center;
     background-color: rgb(238, 96, 0);
+    border: 1px solid black;
     display: none;
     justify-content: space-around;
+    margin: 1rem 0 0 0;
 }
 .sub-nav-div ul{
     list-style: none;
@@ -94,6 +97,15 @@ body{
     gap: 1rem;
     justify-content: space-around;
     padding: 1rem;
+}
+.sub-nav-div a{
+    color: rgb;    
+    text-decoration: none;
+
+}
+.sub-nav-div a:hover{
+    background-color: white;
+    color: rgb(238, 96, 0);
 }
 
 /* Search bar Styling */
@@ -142,7 +154,7 @@ body{
     line-height: 3;
 }
 .sidebar a{
-    color: white;
+    color: rgb(238, 96, 0);
     text-decoration: none;
     text-shadow: black 1px 0 1px;
 }
@@ -178,7 +190,12 @@ body{
     display: flex;
     justify-content: center;
     margin: 1rem;
+    padding: 0.5rem 1rem;
     width: 30%;
+}
+.trans-caption-div a{
+    color: white;
+    text-decoration: solid;
 }
 .search-dropdown {
     position: absolute;
@@ -214,5 +231,14 @@ body{
     }
     .nav-div{
         margin: 1rem 0;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-body{
+        width: 100%;
+    }
+    .sub-nav-section{
+        display: grid;
     }
   }
