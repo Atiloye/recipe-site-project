@@ -3,6 +3,10 @@
 
 This is a self-made project for my Web 2 training. I built the whole site from scratch, and it's simply a site for viewing recipes that have been pre-inputted. Hopefully, there will be improvements in the future.
 
+### GitHub Links
+- GitHub project link: [Profile link](https://github.com/Atiloye/recipe-site-project/)
+- GitHub live link: [Live link](https://atiloye.github.io/recipe-site-project/)
+
 ## Table of contents
 
 - [Overview](#overview)
